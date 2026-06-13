@@ -74,6 +74,17 @@ export default function SiteFooter() {
             />
           </div>
           <div>
+            <div
+              style={{
+                fontFamily: "monospace",
+                fontSize: "8px",
+                color: "var(--text-muted)",
+                marginBottom: "2px",
+                letterSpacing: "0.1em",
+              }}
+            >
+              CREATED BY
+            </div>
             <a
               href="https://portfolio-angelos-kar.vercel.app/"
               target="_blank"
@@ -100,17 +111,6 @@ export default function SiteFooter() {
             >
               ANGELOS KARAMPALASIS
             </a>
-            <div
-              style={{
-                fontFamily: "monospace",
-                fontSize: "9px",
-                color: "var(--text-muted)",
-                marginTop: "2px",
-                letterSpacing: "0.05em",
-              }}
-            >
-              CREATOR & DEVELOPER
-            </div>
           </div>
         </div>
 
