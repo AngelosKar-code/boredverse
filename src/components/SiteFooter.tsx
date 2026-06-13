@@ -74,17 +74,32 @@ export default function SiteFooter() {
             />
           </div>
           <div>
-            <div
+            <a
+              href="https://portfolio-angelos-kar.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onMouseEnter={playHoverSound}
+              onClick={playClickSound}
+              data-cursor="pointer"
               style={{
                 fontFamily: "var(--font-space-grotesk)",
                 fontSize: "11px",
                 fontWeight: 900,
                 letterSpacing: "0.15em",
                 color: "#ffffff",
+                textDecoration: "none",
+                display: "block",
+                transition: "color 0.2s",
+              }}
+              onMouseOver={(e) => {
+                e.currentTarget.style.color = "var(--accent-cyan)";
+              }}
+              onMouseOut={(e) => {
+                e.currentTarget.style.color = "#ffffff";
               }}
             >
               ANGELOS KARAMPALASIS
-            </div>
+            </a>
             <div
               style={{
                 fontFamily: "monospace",
