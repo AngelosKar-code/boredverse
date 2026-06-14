@@ -14,10 +14,27 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.VERCEL_PROJECT_PRODUCTION_URL
+      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+      : "http://localhost:3000"
+  ),
   title: "BoredVerse | Curing Boredom, One Portal at a Time",
   description: "Find the ultimate interactive, fun, and time-wasting websites on the internet. Launch random portals, play built-in sandbox games, and search curated lists of cure-boredom projects.",
   keywords: ["fun websites", "cure boredom", "time waster", "window swap", "internet games", "interactive art", "bored button", "neal.fun", "useless web"],
   authors: [{ name: "BoredVerse Team" }],
+  openGraph: {
+    title: "BoredVerse | Curing Boredom, One Portal at a Time",
+    description: "Find the ultimate interactive, fun, and time-wasting websites on the internet. Launch random portals, play built-in sandbox games, and search curated lists of cure-boredom projects.",
+    url: "/",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "BoredVerse | Curing Boredom, One Portal at a Time",
+    description: "Find the ultimate interactive, fun, and time-wasting websites on the internet. Launch random portals, play built-in sandbox games, and search curated lists of cure-boredom projects.",
+  },
 };
 
 export const viewport: Viewport = {
